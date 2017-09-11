@@ -2,8 +2,9 @@
 
 namespace App\Core;
 
-class Base {
+class Repository {
   public $container;
+  public $entityManager;
   protected static $instance;
 
   final public static function getInstance()
@@ -17,6 +18,7 @@ class Base {
 
   public function __construct() {
     $this->container = Container::getInstance();
+    $this->entityManager = $container->entityManager;
   }
 }
 
