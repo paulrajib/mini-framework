@@ -1,0 +1,9 @@
+{
+    "require": {
+        "doctrine/orm": "^2.5",
+        "xiaoler/blade": "^5.4"
+    },
+    "autoload": {
+      "classmap": ["app/"]
+    }
+}
