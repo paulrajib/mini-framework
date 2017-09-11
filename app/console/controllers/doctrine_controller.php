@@ -2,12 +2,12 @@
 
 namespace App\Console\Controllers;
 
-use App\Core\Controller;
+use App\Core\ConsoleController;
 use App\Libs\EntityGenerator;
 use Doctrine\ORM\Mapping\Driver\DatabaseDriver;
 use Doctrine\ORM\Tools\DisconnectedClassMetadataFactory;
 
-class DoctrineController extends Controller {
+class DoctrineController extends ConsoleController {
   public function __construct() {
     parent::__construct();
   }
