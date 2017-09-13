@@ -9,7 +9,7 @@ class Model {
   {
     foreach ($data as $key => $value) {
       if(in_array($key, $this->massAssignable)) {
-        $this->key = $value;
+        $this->$key = $value;
       }
     }
   }

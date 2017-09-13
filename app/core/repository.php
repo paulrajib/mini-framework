@@ -18,7 +18,7 @@ class Repository {
 
   public function __construct() {
     $this->container = Container::getInstance();
-    $this->entityManager = $container->entityManager;
+    $this->entityManager = $this->container->entityManager;
   }
 }
 
