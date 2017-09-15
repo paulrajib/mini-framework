@@ -16,6 +16,8 @@ class Database extends Provider
     $paths = array(__DIR__.'/../models');
     $isDevMode = false;
     $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
+    $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, null, null, false);
+    $config->setProxyDir(__DIR__.'/../proxies/');
     $entityManager = EntityManager::create($dbConf, $config);
     $this->container->bind('entityManager', $entityManager);
   }
