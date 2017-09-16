@@ -13,7 +13,7 @@ class Response {
     $this->container = Container::getInstance();
   }
 
-  public function render($template, $parameters)
+  public function render($template, $parameters=[])
   {
     echo $this->container->blade->make($template, $parameters)->render();
   }
